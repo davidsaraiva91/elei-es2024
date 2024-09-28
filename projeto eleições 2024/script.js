@@ -1,15 +1,15 @@
 document.getElementById("buscar").addEventListener("click", function () {
-  const estado = document.getElementById("cidade").value;
+  const estado = document.getElementById("estado").value;
 
   if (!estado) {
     alert("Por favor, insira a sigla da cidade.");
     return;
   }
 
-  buscarResultados(cidade);
+  buscarResultados(estado);
 });
 
-function buscarResultados(cidade) {
+function buscarResultados(estado) {
   // resutado das eleiçoes
   const url = `https://api.eleicoes2024.com/resultados/${cidade}`;
 
