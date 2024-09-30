@@ -17,7 +17,8 @@ input {
   justify-content: center;
   padding: 10px 8px;
   margin-right: 10px;
-  position: relative;
+  /*nao precisa de position relative para fazer alinhamento de elementos nesse caso aqui */
+  /*position: relative;*/
   top: 10px;
   left: 480px;
   color: rgb(12, 14, 12);
@@ -28,7 +29,8 @@ button {
   background: #2d98da;
   padding: 10px 8px;
   color: #f4f4f7;
-  position: relative;
+  /*nao precisa de position relative para fazer alinhamento de elementos nesse caso aqui */
+  /*position: relative;*/
   top: 10px;
   left: 500px;
   border: 2px solid rgb(214, 236, 91);
@@ -44,15 +46,26 @@ button {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+#busca{
+  margin-top: 20px;
+}
+
 img {
   width: 10%;
   height: 10%;
-  margin: 20;
-  padding: 100;
   position: relative;
-  top: -180px;
-  left: 270px;
+  top: -200px;
+  left: 9px;
 }
+
+/* modificando o posicionamento da imagem apenas em dispositivos móveis */
+@media (max-width: 600px) {
+  img {
+    top: -235px;
+  }
+}
+
+
 @media (max-width: 800px) {
   .form-group {
     min-width: 100px;
